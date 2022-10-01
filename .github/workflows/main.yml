@@ -11,6 +11,12 @@ jobs:
         run: npm i
       - name: Run tests and create report
         run: npm run runrep
+      - name: Upload artifact cucumber-report
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+            name: cucumber-report
+            path: ./reports/cucumber-htmlreport 
       - name: Upload report
         if: always()
         uses: peaceiris/actions-gh-pages@v3.7.3

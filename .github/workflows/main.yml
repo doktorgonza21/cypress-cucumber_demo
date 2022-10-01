@@ -1,0 +1,21 @@
+name: E2E on Chrome
+on: [push]
+jobs:
+  cypress-run:
+    runs-on: Windows-latest
+    name: Tests on chrome
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2 
+      - name: install dependencies
+        run: npm i
+      - name: Run tests and create report
+        run: npm run runrep  
+      - name: Upload report
+        uses: JamesIves/github-pages-deploy-action@v4
+        if: always()
+        with:
+          branch: main
+          folder: report/cucumber-htmlreport
+          target-folder: docs    
+             

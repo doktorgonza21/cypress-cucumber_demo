@@ -15,7 +15,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4
         if: always()
         with:
-          branch: main
+          branch: ghpages
           folder: report/cucumber-htmlreport
           target-folder: docs    
              

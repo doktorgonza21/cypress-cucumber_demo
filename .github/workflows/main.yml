@@ -13,7 +13,6 @@ jobs:
         run: npm run runtest
       - name: Generate report
         run: npm run runrep
-      - name: Upload artifact cucumber-report
       - name: Upload report
         if: always()
         uses: peaceiris/actions-gh-pages@v3.7.3

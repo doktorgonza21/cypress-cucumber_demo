@@ -10,12 +10,12 @@ jobs:
       - name: install dependencies
         run: npm i
       - name: Run tests and create report
-        run: npm run runrep  
+        run: npm run runrep
       - name: Upload report
-        uses: JamesIves/github-pages-deploy-action@v4
         if: always()
+        uses: peaceiris/actions-gh-pages@v3.7.3
         with:
-          branch: ghpages
-          folder: report/cucumber-htmlreport
-          target-folder: docs    
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            publish_branch: ghpages
+            publish_dir: reports/cucumber-htmlreport/
              

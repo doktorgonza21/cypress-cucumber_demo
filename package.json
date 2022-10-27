@@ -4,11 +4,11 @@
   "description": "cypress-cucumber",
   "main": "index.js",
   "scripts": {
-    "cypress:run": "cypress run --browser chrome",
+    "cypress:run": "cypress run --browser chrome --config-file conf/cypress.config.js",
     "test": "cypress open",
-    "go": "npx cypress run --config-file ./my.config.js --browser chrome && node ./cucumber-html-report.js",
-    "gohead": "npx cypress run --config-file ./my.config.js --browser chrome --headed && node ./cucumber-html-report.js",
-    "runtest": "cypress run --browser chrome",
+    "go": "npx cypress run --config-file conf/my.config.js --browser chrome && node ./cucumber-html-report.js",
+    "gohead": "npx cypress run --config-file conf/my.config.js --browser chrome --headed && node ./cucumber-html-report.js",
+    "runtest": "cypress run --browser chrome --config-file conf/cypress.config.js",
     "runrep": "node cucumber-html-report.js"
 
   },

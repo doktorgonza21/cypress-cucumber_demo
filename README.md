@@ -1,4 +1,4 @@
-## Automation example tests for "telnyx.com" web-site.
+## Example tests for "telnyx.com" web-site.
 
 ### These tests showing the automation of user registration on different form and check some website elements.
 

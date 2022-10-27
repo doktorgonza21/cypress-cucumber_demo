@@ -19,6 +19,3 @@
     3.4. Run the "**npx cypress run**" command to default test run<br>
     3.5. Run the "**npx cypress open**" command to run the cypress GUI    
 
----------------------------------------------------------------------------------------
-##### **To see reports remotely without installation and files download**
-Go to this link to see Mochawesome report: https://doktorgonza21.github.io/cypress-cucumber_demo/

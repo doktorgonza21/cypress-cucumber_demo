@@ -5,8 +5,8 @@ import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
 Given('A user opens {string} page and scroll down to become a tester form', (url) => {
     cy.visit(url);
     beforePage.closeCookiesModalWindow()
-    cy.wait(3000)
     betatestPage.scrollToForm()
+    cy.wait(3000)
 })
 
 When('A user fills the form and clicks Submit button', () => {

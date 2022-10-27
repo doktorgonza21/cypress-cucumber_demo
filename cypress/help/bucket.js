@@ -25,12 +25,12 @@ export default {
     ],
 
     powerfullProduct: [
-      'Messaging API',
-      'Video API',
-      'Wireless',
       'Voice API',
       'Elastic SIP Trunking',
-      'Storage'
+      'Messaging API',
+      'International Numbers',
+      'Video API',
+      'Wireless',
     ],
 
     commentNames: [

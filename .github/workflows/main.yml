@@ -10,6 +10,7 @@ jobs:
       - name: install dependencies
         run: npm i
       - name: Run tests
+        continue-on-error: true
         run: npm run runtest
       - name: Generate report
         run: npm run runrep
